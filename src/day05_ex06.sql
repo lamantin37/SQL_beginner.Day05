@@ -6,7 +6,7 @@ FROM  menu m
 INNER JOIN pizzeria pz ON m.pizzeria_id = pz.id
 ORDER BY 1,2;
 
-CREATE INDEX IF NOT EXISTS idx_1 ON pizzeria (rating);
+CREATE INDEX idx_1 ON pizzeria (rating);
 
 EXPLAIN ANALYZE
 SELECT
